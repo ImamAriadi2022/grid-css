@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Post</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="instagram-post">
+  <div class="header">Grid Layout: Menguasai CSS Grid untuk Desain Web Modern</div>
+  
+  <div class="section grid-basics">
+    <div class="title">Konsep Dasar</div>
+    <div class="content">
+      CSS Grid adalah teknologi layout yang powerful untuk mendesain web modern. Grid memungkinkan kita membuat layout yang kompleks dengan mudah, menggunakan konsep baris (rows) dan kolom (columns).
+    </div>
+    <div class="visual">
+      <div class="grid-container-basic">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section simple-grid">
+    <div class="title">Membuat Grid Sederhana</div>
+    <div class="content code">
+      <pre>
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.container > div {
+  background-color: #8faadc;
+  padding: 20px;
+  text-align: center;
+}
+      </pre>
+    </div>
+    <div class="visual">
+      <div class="grid-container-simple">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section complex-layout">
+    <div class="title">Layout Kompleks dengan Grid Area</div>
+    <div class="content code">
+      <pre>
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+.footer { grid-area: footer; }
+      </pre>
+    </div>
+    <div class="visual">
+      <div class="grid-container-complex">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item sidebar">Sidebar</div>
+        <div class="grid-item content">Content</div>
+        <div class="grid-item footer">Footer</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section responsive-design">
+    <div class="title">Desain Responsif</div>
+    <div class="content code">
+      <pre>
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+      </pre>
+    </div>
+    <div class="visual">
+      <div class="grid-container-responsive">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">CSS Grid adalah alat yang sangat berguna untuk membuat layout web yang kompleks dan responsif dengan mudah. Pelajari lebih lanjut tentang CSS Grid untuk menguasai desain web modern!</div>
+</div>
+
+
+
+
+
+<!-- ini adalah html untuk gridnya -->
+<div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+</div>
+
+
+
+<!-- grid semantik sederhana -->
+<div class="visual">
+    <div class="grid-container-complex">
+      <div class="grid-item header">Header</div>
+      <div class="grid-item sidebar">Sidebar</div>
+      <div class="grid-item content">Content</div>
+      <div class="grid-item footer">Footer</div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+.instagram-post {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    margin-bottom: 10px;
+  }
+  
+  .code {
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  .visual {
+    margin-top: 10px;
+  }
+  
+  .grid-container-basic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .grid-container-simple {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .grid-container-complex {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar content content"
+      "footer footer footer";
+    gap: 10px;
+  }
+  
+  .grid-container-responsive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .item, .header, .sidebar, .content, .footer, .grid-item {
+    background-color: #8faadc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Specific styling for complex grid areas */
+  .grid-item.header {
+    grid-area: header;
+  }
+  
+  .grid-item.sidebar {
+    grid-area: sidebar;
+  }
+  
+  .grid-item.content {
+    grid-area: content;
+  }
+  
+  .grid-item.footer {
+    grid-area: footer;
+  }
+  
+  .footer {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+
+
+
+
+
+/* layout grid sederhana */
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .container > div {
+    background-color: #8faadc;
+    padding: 20px;
+    text-align: center;
+  } */
+
+
+
+
+/* grid semantik web */
+/* .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar content content"
+      "footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  .sidebar { grid-area: sidebar; }
+  .content { grid-area: content; }
+  .footer { grid-area: footer; } */
